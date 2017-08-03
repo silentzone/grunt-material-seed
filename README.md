@@ -10,3 +10,5 @@
 * npm install -g grunt-cli     //全局安装grunt
 * npm install                  //安装依赖
 * grunt serve                  //运行服务
+
+![image](https://github.com/silentzone/grunt-material-seed/blob/master/start.png?raw=true)
