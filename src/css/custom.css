@@ -1,0 +1,49 @@
+body,html { padding: 0; margin: 0; height: 100%;  } 
+.wrap { width: 100%; height: 100%; background:url(../img/login_bg.png) no-repeat; background-size:100%;  transition: all 0.7s;}
+.description { width: 500px; float:left; margin: 148px 0 0 0; color:#fff; transition: all 0.7s;}
+.mate-info h3 { font-weight: normal; font-size: 26px;   margin-bottom: 15px; opacity: 0.7;  }
+.mate-info span { font-size: 18px; opacity: 0.7;  }
+.logo { display: inline-block; height:48px; }
+.split_line {  
+  display: block;
+  width: 449px;
+  height: 0px;
+  opacity: 0.5;
+  border-style: solid;
+  border-bottom-width: 0;
+  border-top-width: 1px;
+  border-image-source: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0));
+  border-image-slice: 1; 
+  margin: 48px 0 40px 0;  }
+body .wrap .login_panel { position: relative;  float: right; width:332px; height:auto; margin: 120px 0 0 0; padding:19px 30px 35px 30px; text-align: center;  } /* 后期调整为 less 的方式 将宽度作为自动适配*/
+.panel_logo { display: inline-block; height: 36px; margin:9px 0 12px 0; }
+.login_panel form { text-align: left; transition: all 0.7s; }
+.login_panel form a { color:#7b8994; }
+.vcode_wrap {  position: relative;}
+.img_vcode { position: absolute; bottom:20px; right:10px;}
+.login_btn { width: 100%;} 
+.zoomIn {  
+      background-size: 130%;
+}
+  
+
+/* bootstrap 需要定制的部分 */
+.checkbox { margin: 0; }
+.copyright_info {  clear:both; opacity: 0.7;  font-size: 12px; text-align: left; color: #fff;  position: absolute; bottom: 40px; }
+ /* 自适应 */
+@media (max-width: 992px) { 
+ .login_panel  { width: 100%; float:none; } 
+ .description { width: 100%; float:none; } 
+}
+
+@media ( max-width:1100px) { 
+  /* 最大 1300 宽度 */
+ .wrap  { background-size:1300px;  }  
+}
+@media ( min-width:1100px) {  
+  .wrap  { background-size:100%;  }
+}
+@media ( max-height:500px) {  
+  .copyright_info  {  display: none; } 
+}
+  

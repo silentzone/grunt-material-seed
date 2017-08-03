@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>  
+    <link href="dist/plugin/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/plugin/material/css/bootstrap-material-design.css" rel="stylesheet">
+     <link href="dist/css/custom.min.css" rel="stylesheet"> <!-- 还没来的急改成 less 方式 -->
+  
+    <!--<link href="src/plugin/material/css/ripples.min.css" rel="stylesheet">-->
+     <!-- 头部模板 -->
+</head> 
+<body>
+    <div class="wrap">
+        <div class="container"> 
+            <div class="well bs-component login_panel">
+                <img class="panel_logo" src="src/img/logo_blue.png"  alt="云开票logo"  />
+                
+                <form id="login_form"> 
+                    <div class="form-group label-floating "> 
+                        <label class="control-label" for="usrid">用户名 </label>
+                        <input class="form-control" id="usrid" type="text" >
+                    </div>
+                    <div class="form-group label-floating"> 
+                        <label class="control-label" for="pwd">密码</label>
+                        <input class="form-control" id="pwd" type="password">
+                    </div> 
+                    <div class="form-group label-floating vcode_wrap has-warning is-focused">
+                        <label class="control-label" for="focusedInput1">错误验证码</label> <!-- 错误状态 设置焦点 同时提示文字写入 label 中 -->
+                        <input class="form-control" id="verifycode" type="text" value="AJJJ" />
+                        <img src="src/img/verifycode.png"  id="img_vcode"  class="img_vcode"  />
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                        <input type="checkbox">
+                            记住密码最好不做 
+                        </label>
+                    </div> 
+                    <span class="btn btn-raised btn-info login_btn"> 登录 </span>
+                    <a class="pull-left" href="#reg">没有账号,请注册 </a>  <a class="pull-right" href="#fog">忘记密码</a>
+                </form>     
+            </div>
+
+
+            <div class="description">
+                <img class="logo" src="src/img/logo.png" alt="云开票" /> 
+                <span class="split_line"></span>
+                <div class="mate-info">
+                    <h3>时效性 &nbsp 交互性 &nbsp 低成本 &nbsp 易存储</h3>
+                    <span> 高效开票解决方案 </span> 
+                </div> 
+            </div>  
+            <div class="copyright_info"> 版权所有©2017 深圳航天信息有限公司  粤ICP备14036066号</div>
+        </div>                  
+    </div>
+</body>
+<!-- 底部模板 -->
+<script src="dist/js/jquery.min.js"></script>
+<script src="dist/plugin/bootstrap/bootstrap.min.js"></script>
+<!--<script src="src/plugin/material/js/ripples.min.js"></script>-->
+<script src="dist/plugin/material/js/material.min.js"></script> 
+<script src="dist/js/core.min.js"></script> 
+<script src="dist/js/login.min.js"></script>
+
+</html>
